@@ -1,76 +1,84 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Esplora il Museo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Esplora il Museo – MUFEG</title>
   <style>
     body {
-      font-family: Georgia, serif;
-      background-color: #fff8e1;
-      padding: 30px;
+      font-family: 'Georgia', serif;
+      background-color: #f9f4ef;
       margin: 0;
+      padding: 20px;
     }
 
     h1 {
       text-align: center;
       color: #5c3d1e;
-      font-size: 2.5em;
       margin-bottom: 40px;
     }
 
-    .section {
+    .gallery {
       display: flex;
+      flex-direction: column;
       align-items: center;
-      gap: 30px;
-      margin-bottom: 60px;
-      background-color: #fff3cd;
-      padding: 20px;
-      border-radius: 16px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      gap: 60px;
+      max-width: 800px;
+      margin: 0 auto;
     }
 
-    .section img {
-      width: 300px;
-      border-radius: 12px;
-      object-fit: cover;
+    .item {
+      text-align: center;
+    }
+
+    .item img {
+      max-width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
 
     audio {
+      margin-top: 15px;
       width: 100%;
-      max-width: 400px;
     }
 
-    @media (max-width: 768px) {
-      .section {
-        flex-direction: column;
-        text-align: center;
-      }
+    a.back {
+      display: inline-block;
+      margin-top: 40px;
+      text-decoration: none;
+      color: #5c3d1e;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
 
-      .section img {
-        width: 100%;
-        max-width: 300px;
-      }
+    a.back:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <h1>Audio Guida del Museo</h1>
+  <h1>Esplora il Museo</h1>
 
-  <div class="section">
-    <img src="811283c58865d75a43a9b4a3c853557a.jpg" alt="Immagine 1">
-    <audio controls>
-      <source src="Durante una solenne .m4a" type="audio/mp4">
-      Il tuo browser non supporta l'elemento audio.
-    </audio>
+  <div class="gallery">
+    <div class="item">
+      <img src="811283c58865d75a43a9b4a3c853557a.jpg" alt="Immagine 1">
+      <audio controls>
+        <source src="Durante una solenne .m4a" type="audio/mp4">
+        Il tuo browser non supporta l'elemento audio.
+      </audio>
+    </div>
+
+    <div class="item">
+      <img src="images.jpeg" alt="Immagine 2">
+      <audio controls>
+        <source src="Sotto un cielo azzur.m4a" type="audio/mp4">
+        Il tuo browser non supporta l'elemento audio.
+      </audio>
+    </div>
   </div>
 
-  <div class="section">
-    <img src="images.jpeg" alt="Immagine 2">
-    <audio controls>
-      <source src="Sotto un cielo azzur.m4a" type="audio/mp4">
-      Il tuo browser non supporta l'elemento audio.
-    </audio>
+  <div style="text-align: center;">
+    <a class="back" href="index.html">← Torna alla Home</a>
   </div>
 </body>
 </html>
