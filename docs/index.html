@@ -1,43 +1,65 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <title>Mufeg - Museo della Festa del Grano</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MUFEG – Festa del Grano</title>
   <style>
-    body {
+    body, html {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-image: url('Festa del Grano nel Borgo.png');
+      padding: 0;
+      height: 100%;
+      font-family: 'Georgia', serif;
+    }
+
+    .hero {
+      background-image: url("Festa del Grano nel Borgo.png");
       background-size: cover;
       background-position: center;
       height: 100vh;
-    }
-    .button-container {
+      color: white;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      text-align: center;
     }
-    .explore-button {
-      padding: 20px 40px;
-      font-size: 28px;
-      background-color: #fff;
+
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: 4em;
+      margin-bottom: 40px;
+      text-shadow: 3px 3px 6px rgba(0,0,0,0.8);
+    }
+
+    .btn {
+      padding: 20px 50px;
+      font-size: 1.5em;
+      background-color: rgba(255, 255, 255, 0.9);
+      color: #5c3d1e;
       border: none;
-      border-radius: 12px;
+      border-radius: 40px;
       cursor: pointer;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-      transition: background-color 0.3s ease;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+      transition: all 0.3s ease;
     }
-    .explore-button:hover {
-      background-color: #f0f0f0;
+
+    .btn:hover {
+      background-color: #f5d9a5;
     }
   </style>
 </head>
 <body>
-  <div class="button-container">
-    <a href="seconda.html">
-      <button class="explore-button">Esplora il museo</button>
-    </a>
+  <div class="hero">
+    <div class="hero-content">
+      <h1>MUFEG – Festa del Grano</h1>
+      <a href="museo.html" class="btn">Esplora il Museo</a>
+    </div>
   </div>
 </body>
 </html>
