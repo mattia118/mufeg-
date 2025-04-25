@@ -19,12 +19,15 @@
       height: 100vh;
       color: white;
       display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
+      justify-content: center;
       align-items: center;
       text-align: center;
-      padding-bottom: 150px; /* 👈 Più alto rispetto a prima */
-      position: relative;
+    }
+
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     .hero h1 {
@@ -37,12 +40,13 @@
       font-size: 1.5em;
       max-width: 800px;
       text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+      margin-top: 10px;
     }
 
     .btn {
       margin-top: 30px;
-      padding: 20px 40px; /* 👈 Più grande */
-      font-size: 1.5em;   /* 👈 Font più grande */
+      padding: 20px 40px;
+      font-size: 1.5em;
       background-color: rgba(255,255,255,0.9);
       color: #5c3d1e;
       border: none;
@@ -60,9 +64,11 @@
 </head>
 <body>
   <div class="hero">
-    <h1>MUFEG – Festa del Grano</h1>
-    
-    <a href="museo.html" class="btn">Esplora il Museo</a>
+    <div class="hero-content">
+      <h1>MUFEG – Festa del Grano</h1>
+      <p>Scopri la tradizione e l’arte della Festa del Grano di Jelsi</p>
+      <a href="museo.html" class="btn">Esplora il Museo</a>
+    </div>
   </div>
 </body>
 </html>
