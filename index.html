@@ -2,56 +2,67 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>MUFEG – Festa del Grano</title>
   <style>
-    body {
+    body, html {
       margin: 0;
-      background: url('Festa%20del%20Grano%20a%20Jelsi.png') no-repeat center center fixed;
-      background-size: cover;
+      padding: 0;
+      height: 100%;
       font-family: 'Georgia', serif;
-      color: white;
+    }
+
+    .hero {
+      background-image: url("Festa del Grano a Jelsi.png");
+      background-size: cover;
+      background-position: center;
       height: 100vh;
+      color: white;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-end;
       align-items: center;
       text-align: center;
+      padding-bottom: 100px; /* 👈 qui controlliamo la posizione verticale */
+      position: relative;
     }
 
-    h1 {
-      font-size: 3rem;
-      margin: 0.5em 0 0.2em 0;
-      text-shadow: 2px 2px 5px #000;
+    .hero h1 {
+      font-size: 3em;
+      margin: 0;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
     }
 
-    p {
-      font-size: 1.5rem;
-      margin: 0 1em;
-      text-shadow: 1px 1px 3px #000;
+    .hero p {
+      font-size: 1.5em;
+      max-width: 800px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
     }
 
-    button {
-      margin-top: 2em;
-      font-size: 1.2rem;
-      padding: 0.8em 2em;
-      background-color: #ffffffcc;
-      color: #333;
+    .btn {
+      margin-top: 30px;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      background-color: rgba(255,255,255,0.9);
+      color: #5c3d1e;
       border: none;
-      border-radius: 15px;
+      border-radius: 20px;
       cursor: pointer;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-      transition: all 0.3s ease;
+      box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
+      transition: background-color 0.3s;
+      text-decoration: none;
     }
 
-    button:hover {
-      background-color: #f0f0f0;
-      transform: scale(1.05);
+    .btn:hover {
+      background-color: #f5e1c2;
     }
   </style>
 </head>
 <body>
-  <h1>MUFEG – Festa del Grano</h1>
-  <p>Scopri la tradizione e l’arte della Festa del Grano di Jelsi</p>
-  <button onclick="location.href='museo.html'">Esplora il Museo</button>
+  <div class="hero">
+    <h1>MUFEG – Festa del Grano</h1>
+    <p>Scopri la tradizione e l’arte della Festa del Grano di Jelsi</p>
+    <a href="museo.html" class="btn">Esplora il Museo</a>
+  </div>
 </body>
 </html>
