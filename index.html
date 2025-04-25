@@ -10,34 +10,48 @@
       background-size: cover;
       font-family: 'Georgia', serif;
       color: white;
-      text-align: center;
       height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
+      text-align: center;
     }
+
     h1 {
-      font-size: 2.5rem;
-      margin: 0.5em 0;
+      font-size: 3rem;
+      margin: 0.5em 0 0.2em 0;
+      text-shadow: 2px 2px 5px #000;
     }
+
+    p {
+      font-size: 1.5rem;
+      margin: 0 1em;
+      text-shadow: 1px 1px 3px #000;
+    }
+
     button {
       margin-top: 2em;
       font-size: 1.2rem;
-      padding: 0.6em 1.5em;
-      background-color: #f5f5f5;
+      padding: 0.8em 2em;
+      background-color: #ffffffcc;
       color: #333;
       border: none;
-      border-radius: 5px;
+      border-radius: 15px;
       cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+      transition: all 0.3s ease;
     }
+
     button:hover {
-      background-color: #ddd;
+      background-color: #f0f0f0;
+      transform: scale(1.05);
     }
   </style>
 </head>
 <body>
   <h1>MUFEG – Festa del Grano</h1>
-  <p>Scopri la tradizione della Festa del Grano a Jelsi</p>
-  <button onclick="location.href='museo.html'">Esplora il museo</button>
+  <p>Scopri la tradizione e l’arte della Festa del Grano di Jelsi</p>
+  <button onclick="location.href='museo.html'">Esplora il Museo</button>
 </body>
 </html>
