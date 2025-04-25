@@ -1,84 +1,63 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Esplora il Museo – MUFEG</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Museo – Festa del Grano</title>
   <style>
     body {
-      font-family: 'Georgia', serif;
-      background-color: #f9f4ef;
-      margin: 0;
-      padding: 20px;
+      font-family: Georgia, serif;
+      background-color: #fff8e1;
+      padding: 30px;
+      color: #4e3b1f;
     }
 
     h1 {
       text-align: center;
-      color: #5c3d1e;
-      margin-bottom: 40px;
+      font-size: 2.5em;
     }
 
-    .gallery {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 60px;
-      max-width: 800px;
-      margin: 0 auto;
+    .media {
+      margin: 40px auto;
+      max-width: 600px;
+      border: 2px solid #d2b48c;
+      border-radius: 20px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.2);
     }
 
-    .item {
-      text-align: center;
-    }
-
-    .item img {
-      max-width: 100%;
-      border-radius: 15px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    .media img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 15px;
     }
 
     audio {
-      margin-top: 15px;
       width: 100%;
-    }
-
-    a.back {
-      display: inline-block;
-      margin-top: 40px;
-      text-decoration: none;
-      color: #5c3d1e;
-      font-weight: bold;
-      font-size: 1.2em;
-    }
-
-    a.back:hover {
-      text-decoration: underline;
+      margin-top: 15px;
     }
   </style>
 </head>
 <body>
-  <h1>Esplora il Museo</h1>
+  <h1>Esplora il Museo della Festa del Grano</h1>
 
-  <div class="gallery">
-    <div class="item">
-      <img src="811283c58865d75a43a9b4a3c853557a.jpg" alt="Immagine 1">
-      <audio controls>
-        <source src="Durante una solenne .m4a" type="audio/mp4">
-        Il tuo browser non supporta l'elemento audio.
-      </audio>
-    </div>
-
-    <div class="item">
-      <img src="images.jpeg" alt="Immagine 2">
-      <audio controls>
-        <source src="Sotto un cielo azzur.m4a" type="audio/mp4">
-        Il tuo browser non supporta l'elemento audio.
-      </audio>
-    </div>
+  <div class="media">
+    <img src="Festa%20del%20Grano%20nel%20Borgo.png" alt="Festa del Grano nel Borgo">
+    <audio controls>
+      <source src="Durante%20una%20solenne%20.m4a" type="audio/mp4">
+      Il tuo browser non supporta l'elemento audio.
+    </audio>
   </div>
 
-  <div style="text-align: center;">
-    <a class="back" href="index.html">← Torna alla Home</a>
+  <div class="media">
+    <img src="Festa%20del%20Grano%20a%20Jelsi.png" alt="Festa del Grano a Jelsi">
+    <audio controls>
+      <source src="Sotto%20un%20cielo%20azzur.m4a" type="audio/mp4">
+      Il tuo browser non supporta l'elemento audio.
+    </audio>
   </div>
+
 </body>
 </html>
